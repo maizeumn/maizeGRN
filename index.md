@@ -3,6 +3,8 @@ layout: home
 category: home
 ---
 
+<img src="/grn/images/maizeGRN.png">
+
 This website hosts data related to gene regulatory networks built using published maize RNA-Seq datasets.
 
 - Regulation of gene expression is central to many biological processes.  Gene regulatory networks (GRNs) link transcription factors to their target genes and represent a map of potential transcriptional regulation.  
