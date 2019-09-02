@@ -1,0 +1,23 @@
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+social_media:
+  orcid: 0000-0001-5684-2256
+  google_scholar: Hcb6i0gAAAAJ
+  linkedin: orionzhou
+  github: orionzhou
+  email: zhoupenggeni@gmail.com
+  twitter: orionzhou
+  # website: https://orionzhou.github.io
