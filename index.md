@@ -3,7 +3,7 @@ layout: home
 category: home
 ---
 
-<img src="/grn/images/maizeGRN.png" height="150px">
+<img src="/grn/images/maizeGRN.png" height="250px">
 
 This website hosts data related to gene regulatory networks built using published maize RNA-Seq datasets.
 
