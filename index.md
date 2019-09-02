@@ -3,22 +3,13 @@ layout: home
 category: home
 ---
 
-I'm a post doctoral associate in the [Springer Lab](https://maizeumn.github.io) at the [University of Minnesota](https://twin-cities.umn.edu).
+This website hosts data related to gene regulatory networks built using published maize RNA-Seq datasets.
 
-I have a computer science background, have programming experiences in many computer languages but now settled on [python](https://www.python.org) and [R](https://cran.r-project.org): I use python for efficient data processing and R for modeling / visualization. Check my [GitHub <i class="fab fa-github-alt"></i>](https://github.com/orionzhou) for a list of useful libraries, scripts and configuration files.
-
-I'm a heavy [VIM](https://www.vim.org) user and I edit everything in terminal <i class="fas fa-laptop-code"></i>.
-
-I'm good at processing massive biological data through high-performance computing / cloud computing, check my [GitHub <i class="fab fa-github-alt"></i>](https://github.com/orionzhou) for a list of pipelines I implemented for various research projects.
-
-I'm especially good at data visualization. I create and typeset figures or tables for publication using [ggplot2](https://ggplot2.tidyverse.org) / [Rmarkdown](https://rmarkdown.rstudio.com). I'm a big fan of [tidyverse](https://www.tidyverse.org).
-
-Most of my current work can be viewed as data mining - from experimental design, data generation to preliminary data processing, statistical modeling and data visualization. Check the [Research <i class="fas fa-flask"></i>](/research) page for a list of projects I'm involved in.
-
-While I can spend all day long coding and data mining, here are a list of things keeping me busy after work:
-
-  * Traveling: getting to see, feel and experience a place - be it a small park or national park, a new city or country - is one of my life goals. Check [here <i class="fas fa-images"></i>](/) for the photos I took.
-  * Reading: I enjoy reading classics, especially Chinese traditional literature. Check [here <i class="fas fa-globe"></i>](https://www.douban.com/people/Genius1986/) for a list of books I read / commented.
-  * Movies & music: get immersed in a highly-rated movie is good way for relaxing in the weekend, while music is an indispensable part of my everyday life.
+- Regulation of gene expression is central to many biological processes.  Gene regulatory networks (GRNs) link transcription factors to their target genes and represent a map of potential transcriptional regulation.  
+- While there have been notable successes in applying co-expression based GRNs to identify important regulatory networks in plant species there remains a substantial gap in our knowledge of how to develop GRNs from large scale transcriptome datasets that are now available for optimal use in crop improvement.  -
+- Using publicly available maize transcriptome datasets we constructed 44 GRNs that represent potential regulatory relationships between TFs and other genes in different populations of samples (cross-tissue, cross-genotype, tissue-and-genotype, etc).  
+- Through examining the level of functional enrichment in different types of networks, we explored ways to extract true positive interactions while controlling for false positives.  In order to assess the performance of GRNs in predicting functional TF/target regulatory relationships we used natural variation datasets including a total of 42 paired B73 - Mo17/Oh43/PH207/B37 tissues to validate network predictions.  
+- Overlaying predicted TF-target interactions with previous eQTL mapping results provided support for 68 transcription factors being the source underlying 74 previously identified trans-eQTL hotspots.  
+- As a proof of concept, we confirmed previous findings that the R1 gene regulates the anthocyanin biosynthesis pathway using our method, and demonstrated that the CONSTANS-LIKE transcription factor col11 and the bHLH transcription factor myc7 might act as crucial regulators for the photosynthesis light reaction pathway and jasmonic acid biosynthesis pathway, respectively.
 
 

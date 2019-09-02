@@ -1,50 +1,52 @@
 {% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0' %}
 
-<nav class="UnderlineNav UnderlineNav--right" aria-label="navbar">
-  <div class="UnderlineNav-actions">
-    <i class="fas fa-dragon fa-lg float-left"></i>
+<div class="tabnav text-left">
+  <div class="float-right ">
+    <a class="tabnav-extra" href="https://maizeumn.github.io">
+    SpringerLab
+    </a> <object  class='v-align-middle' data="/images/logo.svg" type="image/svg+xml" style="max-width: 20px; max-height: 20px"></object>
   </div>
 
-  <div class="UnderlineNav-body">
+  <nav class="tabnav-tabs" aria-label="Foo bar">
     {% if page.category == 'home' %}
-    <a href="/" class="UnderlineNav-item selected">
+    <a href="/" class="tabnav-tab selected">
     {% else %}
-    <a href="/" class="UnderlineNav-item">
+    <a href="/" class="tabnav-tab">
     {% endif %}
-      <i class="fas fa-home fa-sm fa-fw"></i>Home
+      <i class="fas fa-home fa-lg fa-fw"></i>Home
     </a>
     
-    {% if page.category == 'profile' %}
-    <a href="/profile" class="UnderlineNav-item selected">
+    {% if page.category == 'about' %}
+    <a href="/about" class="tabnav-tab selected">
     {% else %}
-    <a href="/profile" class="UnderlineNav-item">
+    <a href="/about" class="tabnav-tab">
     {% endif %}
-      <i class="fas fa-user fa-sm fa-fw"></i>Profile
+      <i class="fas fa-user fa-lg fa-fw"></i>About
     </a>
     
-    {% if page.category == 'research' %}
-    <a href="/research" class="UnderlineNav-item selected">
+    {% if page.category == 'download' %}
+    <a href="/download" class="tabnav-tab selected">
     {% else %}
-    <a href="/research" class="UnderlineNav-item">
+    <a href="/download" class="tabnav-tab">
     {% endif %}
-      <i class="fas fa-flask fa-sm fa-fw"></i>Research
+      <i class="fas fa-file-download fa-lg fa-fw"></i>Download
     </a>
     
-    {% if page.category == 'posts' %}
-    <a href="/posts" class="UnderlineNav-item selected">
+    {% if page.category == 'faq' %}
+    <a href="/faq" class="tabnav-tab selected">
     {% else %}
-    <a href="/posts" class="UnderlineNav-item">
+    <a href="/faq" class="tabnav-tab">
     {% endif %}
-      <i class="fas fa-file-alt fa-sm fa-fw"></i>Posts
+      <i class="fas fa-question-circle fa-lg fa-fw"></i>FAQ
     </a>
     
     {% if page.category == 'links' %}
-    <a href="/links" class="UnderlineNav-item selected">
+    <a href="/links" class="tabnav-tab selected">
     {% else %}
-    <a href="/links" class="UnderlineNav-item">
+    <a href="/links" class="tabnav-tab">
     {% endif %}
-      <i class="fas fa-link fa-sm fa-fw"></i>Links
+      <i class="fas fa-link fa-lg fa-fw"></i>Links
     </a>
-  </div>
-</nav>
+  </nav>
+</div>
 
