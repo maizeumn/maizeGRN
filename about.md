@@ -5,14 +5,14 @@ category: about
 
 - GRNs built in this study:
 
-<img src="/grn/images/01.t1.png" width="600">
+<img src="/maizeGRN/images/01.t1.png" width="600">
 
 - Maize transcription factor knockout mutant RNA-Seq datasets
 
-<img src="/grn/images/01.t2.png" width="600">
+<img src="/maizeGRN/images/01.t2.png" width="600">
 
 - Natural variation datasets collected for validation
 
-<img src="/grn/images/01.t3.png" width="600">
+<img src="/maizeGRN/images/01.t3.png" width="600">
 
 
