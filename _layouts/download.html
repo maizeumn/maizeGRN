@@ -10,6 +10,15 @@
       <a href="#url" class="subnav-item">Extra Trees</a>
       <a href="#url" class="subnav-item">eXtreme Gradient Boosting</a>
       </nav>
+      
+      <div class="d-flex flex-wrap gutter-condensed mb-4">
+        {% for grn in site.data.grns %}
+        <div class="col-3 col-md-12 col-lg-4 col-xl-3 mb-3">
+          {% include card_grn.html %}
+        </div>
+        {% endfor %}
+      </div>
+
     </div>
   </div>
   
