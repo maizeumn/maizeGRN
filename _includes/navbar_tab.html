@@ -1,0 +1,52 @@
+{% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0' %}
+
+<div class="tabnav text-left">
+  <div class="float-right ">
+    <a class="tabnav-extra" href="https://maizeumn.github.io">
+    SpringerLab
+    </a> <object  class='v-align-middle' data="/maizeGRN/images/logo.svg" type="image/svg+xml" style="max-width: 20px; max-height: 20px"></object>
+  </div>
+
+  <nav class="tabnav-tabs" aria-label="Foo bar">
+    {% if page.category == 'home' %}
+    <a href="/maizeGRN/" class="tabnav-tab selected">
+    {% else %}
+    <a href="/maizeGRN/" class="tabnav-tab">
+    {% endif %}
+      <i class="fas fa-home fa-lg fa-fw"></i>Home
+    </a>
+    
+    {% if page.category == 'about' %}
+    <a href="/maizeGRN/about" class="tabnav-tab selected">
+    {% else %}
+    <a href="/maizeGRN/about" class="tabnav-tab">
+    {% endif %}
+      <i class="fas fa-user fa-lg fa-fw"></i>About
+    </a>
+    
+    {% if page.category == 'download' %}
+    <a href="/maizeGRN/download" class="tabnav-tab selected">
+    {% else %}
+    <a href="/maizeGRN/download" class="tabnav-tab">
+    {% endif %}
+      <i class="fas fa-file-download fa-lg fa-fw"></i>Download
+    </a>
+    
+    {% if page.category == 'faq' %}
+    <a href="/maizeGRN/faq" class="tabnav-tab selected">
+    {% else %}
+    <a href="/maizeGRN/faq" class="tabnav-tab">
+    {% endif %}
+      <i class="fas fa-question-circle fa-lg fa-fw"></i>FAQ
+    </a>
+    
+    {% if page.category == 'links' %}
+    <a href="/maizeGRN/links" class="tabnav-tab selected">
+    {% else %}
+    <a href="/maizeGRN/links" class="tabnav-tab">
+    {% endif %}
+      <i class="fas fa-link fa-lg fa-fw"></i>Links
+    </a>
+  </nav>
+</div>
+
