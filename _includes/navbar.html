@@ -41,6 +41,14 @@
     {% endif %}
       <i class="fas fa-link fa-lg fa-fw"></i>Links
     </a>
+    
+    {% if page.category == 'contact' %}
+    <a href="/maizeGRN/contact" class="UnderlineNav-item selected">
+    {% else %}
+    <a href="/maizeGRN/contact" class="UnderlineNav-item">
+    {% endif %}
+      <i class="fas fa-envelope-square fa-lg fa-fw"></i>Contact Us
+    </a>
   </div>
 
   <div class="UnderlineNav-actions">
