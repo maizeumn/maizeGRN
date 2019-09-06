@@ -3,7 +3,21 @@
 <div class="container-lg py-6 p-responsive text-center">
   {% include navbar.html%}
 
-  {% include content.html %}
+	<div class="Box Box--blue box-shadow-medium f4 mt-3 overflow-hidden no-underline text-left">
+	  <div class="Box-header">
+		Frequently Asked Questions
+	  </div>
+	  <ul>
+		{% for faq in site.data.faq %}
+		<li class="Box-row">
+			<details class="details-overlay">
+			  <summary>{{ faq.Q }}</summary>
+			  <div class="position-relative bg-white p-3 border" style="z-index: 100">{{ faq.A }}</div>
+			</details>
+		</li>
+		{% endfor %}
+	  </ul>
+	</div>
 
   {% include copyright.html %}
 

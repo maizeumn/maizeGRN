@@ -1,0 +1,19 @@
+-
+  Q: How are the GRNs constructed?
+  A: Normalized CPM matrices from the 21 public RNA-Seq datasets were filtered to remove silent (CPM < 1 in all samples) and invariable (standard deviation of CPM = 0) genes.  A set of 2,289 maize TFs were obtained from PlantTFDB (Jin et al. 2017) and converted to 2,211 AGP_v4 gene models using the v3_to_v4 mapping table from maizeGDB (Andorf et al. 2016).  All GRNs were built using the python machine learning library scikit-learn and XGBoost (Pedregosa et al. 2011; Chen and Guestrin 2016). Transformed CPM matrices and the list of putative TFs were used to train three regression models (random forest, extra trees and xgboost) for each dataset using the RandomForestRegressor(), ExtraTreesRegressor() and XGBRegressor() classes, respectively.  RandomForest and ExtraTrees regression models were built using parameters '--n_estimators=1000 --criterion=mse --max_features=sqrt', while XGBoost regression models were built using parameters '--n_estimators=1000 --max_depth=3 --learning_rate=0.0001 --reg_alpha=0 --reg_lambda=1' (Pedregosa et al. 2011; Chen and Guestrin 2016).  For each regression approach a total of 44 GRNs were constructed including 4 developmental networks built using different tissues / developmental stages of the B73 line (three independent datasets and one combined dataset including 237 different tissues or stages of B73), 23 tissue-specific networks built using the same tissue sampled from multiple inbred lines, 4 tissue-genotype networks that include multiple tissues sampled from a panel of inbred lines and one network built using shoot apical meristem sampled from 108 B73xMo17 recombinant inbred lines (Table 1).  Five GRNs generated in two recent studies including a maize developmental network (Walley et al. 2016) as well as four tissue-specific networks (leaf, root, shoot apical meristem and seed) (Huang et al. 2018) were also included (Table 1). 
+-
+  Q: How can I obtain the network edge information?
+  A: MaizeGRN is freely available to download for both academic and commercial users. You can find all the flat-files for all network edge information for each of 44 networks in the <a href="/maizeGRN/download">download page</a>.
+-
+  Q: Which version of maize genome annotation does MaizeGRN support?
+  A: The latest genome assembly B73 RefGen_v4 (<a href='//pubmed.gov/28605751' target='_blank'>Jiao et al., 2017</a>) was used to determine gene expression levels. Please be aware that there are additions and deletions of gene models between RefGen_v3 and RefGen_v4.
+-
+  Q: What functional annotation did MaizeGRN use?
+  A: We use Gene Ontology annotaiton developed by <a href='//doi.org/10.1002/pld3.52' target="_blank">maize-GAMER</a> and CornCyc pathway annotation obtained from maizeGDB.
+-
+  Q: What is the source of transcription factors (TFs) used in MaizeNet?
+  A: A set of 2,289 maize TFs were obtained from <a href='http://planttfdb.cbi.pku.edu.cn/' target='_blank'>PlantTFDB (Jin et al. 2017)</a> and converted to 2,211 AGP_v4 gene models using the v3_to_v4 mapping table from maizeGDB (Andorf et al. 2016).
+-
+  Q: How to cite MaizeNet?
+  A: Zhou et al. Exploring Functional Transcriptomics using Gene Regulatory Networks in Maize. 2019. 
+
