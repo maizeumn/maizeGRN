@@ -1,5 +1,5 @@
 ---
-layout: download1
+layout: download3
 category: download
 ---
 
