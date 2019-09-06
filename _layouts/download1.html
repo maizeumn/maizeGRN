@@ -1,0 +1,29 @@
+{% include header.html %}
+
+<div class="container-lg py-6 p-responsive text-center">
+  {% include navbar.html%}
+
+  <div class="box-shadow-medium f4 mt-3 overflow-hidden no-underline text-left">
+    <div class="Box-body">
+      <nav class="subnav" aria-label="Respository">
+      <a href="#url" class="subnav-item" aria-current="page">Random Forest</a>
+      <a href="#url" class="subnav-item selected">Extra Trees</a>
+      <a href="#url" class="subnav-item">eXtreme Gradient Boosting</a>
+      </nav>
+      
+      <div class="d-flex flex-wrap gutter-condensed mb-4">
+        {% for grn in site.data.grns %}
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+          {% include card_grn.html type=ET %}
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+  
+  {% include copyright.html %}
+
+</div>
+
+{% include footer.html %}
