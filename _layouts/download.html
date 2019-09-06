@@ -3,15 +3,15 @@
 <div class="container-lg py-6 p-responsive text-center">
   {% include navbar.html%}
 
-  <div class="box-shadow-medium f4 mt-3 overflow-hidden no-underline text-left">
+  <div class="box-shadow-medium f4 mt-3 overflow-hidden no-underline flex-justify-center">
     <div class="Box-body">
-      <nav class="subnav" aria-label="Respository">
+      <nav class="subnav">
       <a href="/maizeGRN/download" class="subnav-item selected" aria-current="page">Random Forest</a>
       <a href="/maizeGRN/download2" class="subnav-item">Extra Trees</a>
       <a href="/maizeGRN/download3" class="subnav-item">eXtreme Gradient Boosting</a>
       </nav>
       
-      <div class="d-flex flex-wrap gutter-condensed mb-4">
+      <div class="d-flex flex-wrap gutter-condensed mb-4 flex-justify-start">
         {% for grn in site.data.grns %}
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
           {% include card_grn.html %}
