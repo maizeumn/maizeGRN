@@ -3,9 +3,9 @@
 <div class="container-lg py-6 p-responsive text-center">
   {% include navbar.html%}
 
-	<div class="Box Box--blue box-shadow-medium f4 mt-3 overflow-hidden no-underline text-left">
+	<div class="box-shadow-medium f4 mt-3 overflow-hidden no-underline text-left">
 	  <div class="Box-header">
-		Frequently Asked Questions
+		<i class="fas fa-question-circle fa-fw"></i> Frequently Asked Questions
 	  </div>
 	  <ul>
 		{% for faq in site.data.faq %}
@@ -18,6 +18,24 @@
 		{% endfor %}
 	  </ul>
 	</div>
+
+  <div class="box-shadow-medium f4 mt-3 overflow-hidden no-underline text-left">
+	  <div class="Box-header">
+		<i class="fas fa-link fa-fw"></i> Useful Links
+	  </div>
+    <div class="Box-body">
+    
+      <div class="d-flex flex-wrap gutter-condensed flex-justify-start">
+        {% for link in site.data.links %}
+        <div class="col-12 col-md-6 col-lg-3 mb-2">
+          {% include card_link.html %}
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+
 
   {% include copyright.html %}
 
