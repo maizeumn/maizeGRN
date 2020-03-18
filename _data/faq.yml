@@ -15,7 +15,7 @@
   A: A set of 2,289 maize TFs were obtained from <a href='http://planttfdb.cbi.pku.edu.cn/' target='_blank'>PlantTFDB (Jin et al. 2017)</a> and converted to 2,211 AGP_v4 gene models using the v3_to_v4 mapping table from maizeGDB (Andorf et al. 2016).
 -
   Q: How to download the datasets?
-  A: The processed datasets used to create networks (raw and filtered expression tables) and predicted interactions are deposited at DRUM (Data Repository for U of M): <a href='https://conservancy.umn.edu/handle/11299/212030' target='_blank'>link</a>
+  A: The processed datasets used to create networks (raw and filtered expression tables) and predicted interactions are deposited at DRUM (Data Repository for U of M) <a href='https://conservancy.umn.edu/handle/11299/212030' target='_blank'>link</a>
 -
   Q: How to cite MaizeNet?
   A: Zhou, P., Li, Z., Magnusson, E., Gomez Cano, F. A., Crisp, P. A., Noshay, J., Grotewold, E., Hirsch, C., Briggs, S. P., & Springer, N. M. (2020). Meta Gene Regulatory Networks in Maize Highlight Functionally Relevant Regulatory Interactions. The Plant Cell. <a href='https://doi.org/10.1105/tpc.20.00080' target='_blank'>https://doi.org/10.1105/tpc.20.00080</a>
