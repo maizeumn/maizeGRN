@@ -13,6 +13,7 @@
       
       <div class="d-flex flex-wrap gutter-condensed mb-4 flex-justify-start">
         {% for grn in site.data.grns %}
+        {% assign type = "rf" %}
         <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
           {% include card_grn.html %}
         </div>
